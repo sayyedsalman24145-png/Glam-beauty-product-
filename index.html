@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam Beauty Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">GLAM <span>BEAUTY</span></a>
+    <nav class="navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <button class="cart-toggle" id="cartToggle">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">YOUR BEAUTY, YOUR WAY</p>
+        <h1>Discover Your Natural Beauty</h1>
+        <p>Find your everyday favourites in our thoughtfully selected beauty collection.</p>
+        <a href="#products" class="main-button">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/product-01.svg" alt="Glam Beauty featured skincare product">
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <p class="eyebrow">ABOUT GLAM BEAUTY</p>
+      <h2>Feel good. Look radiant.</h2>
+      <p>Glam Beauty Products is a beauty shopping website project created to showcase skincare and makeup products in a simple, elegant and user-friendly design.</p>
+    </section>
+
+    <section class="products section" id="products">
+      <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+      <h2>Our Beauty Products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/product-01.svg" alt="Rose Glow Serum">
+          <div class="product-info"><h3>Rose Glow Serum</h3><p class="price">₹499</p><button class="add-cart" data-name="Rose Glow Serum" data-price="499">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-02.svg" alt="Velvet Matte Lipstick">
+          <div class="product-info"><h3>Velvet Matte Lipstick</h3><p class="price">₹299</p><button class="add-cart" data-name="Velvet Matte Lipstick" data-price="299">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-03.svg" alt="Daily Moisture Cream">
+          <div class="product-info"><h3>Daily Moisture Cream</h3><p class="price">₹399</p><button class="add-cart" data-name="Daily Moisture Cream" data-price="399">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-04.svg" alt="Soft Touch Compact">
+          <div class="product-info"><h3>Soft Touch Compact</h3><p class="price">₹349</p><button class="add-cart" data-name="Soft Touch Compact" data-price="349">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-05.svg" alt="Pure Clean Face Wash">
+          <div class="product-info"><h3>Pure Clean Face Wash</h3><p class="price">₹249</p><button class="add-cart" data-name="Pure Clean Face Wash" data-price="249">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-06.svg" alt="Silk Shine Hair Oil">
+          <div class="product-info"><h3>Silk Shine Hair Oil</h3><p class="price">₹279</p><button class="add-cart" data-name="Silk Shine Hair Oil" data-price="279">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-07.svg" alt="Peach Blush">
+          <div class="product-info"><h3>Peach Blush</h3><p class="price">₹319</p><button class="add-cart" data-name="Peach Blush" data-price="319">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-08.svg" alt="Hydra Sunscreen">
+          <div class="product-info"><h3>Hydra Sunscreen</h3><p class="price">₹429</p><button class="add-cart" data-name="Hydra Sunscreen" data-price="429">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-09.svg" alt="Lash Volume Mascara">
+          <div class="product-info"><h3>Lash Volume Mascara</h3><p class="price">₹289</p><button class="add-cart" data-name="Lash Volume Mascara" data-price="289">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-10.svg" alt="Soft Petal Perfume">
+          <div class="product-info"><h3>Soft Petal Perfume</h3><p class="price">₹599</p><button class="add-cart" data-name="Soft Petal Perfume" data-price="599">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-11.svg" alt="Nourish Lip Balm">
+          <div class="product-info"><h3>Nourish Lip Balm</h3><p class="price">₹149</p><button class="add-cart" data-name="Nourish Lip Balm" data-price="149">Add to Cart</button></div>
+        </article>
+        <article class="product-card">
+          <img src="images/product-12.svg" alt="Glow Face Mask">
+          <div class="product-info"><h3>Glow Face Mask</h3><p class="price">₹199</p><button class="add-cart" data-name="Glow Face Mask" data-price="199">Add to Cart</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cart-section section" id="cartSection" hidden>
+      <h2>Your Shopping Cart</h2>
+      <ul id="cartItems"></ul>
+      <p class="cart-total">Total: ₹<span id="cartTotal">0</span></p>
+      <button class="outline-button" id="clearCart">Clear Cart</button>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+      <h2>Contact Us</h2>
+      <p>Email: glambeauty@example.com</p>
+      <p>Phone: Add your contact number</p>
+      <p>Address: Add your city and address</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Glam Beauty Products | Student Website Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; padding: 25px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #fffaf7, #f2dfe5); font-family: Arial, sans-serif; color: #65565c; }
+.brand { margin-bottom: 22px; color: #49313d; text-decoration: none; font: bold 27px Georgia, serif; }
+.brand span { color: #9b526f; }
+.auth-card { width: 100%; max-width: 420px; padding: 34px; border-radius: 18px; background: white; box-shadow: 0 14px 40px #49313d1a; }
+.eyebrow { color: #9b526f; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+h1 { color: #49313d; font: 31px Georgia, serif; margin: 10px 0 24px; }
+label { display: block; margin: 16px 0 7px; color: #49313d; font-size: 14px; }
+input { width: 100%; padding: 12px; border: 1px solid #e4cbd4; border-radius: 8px; font-size: 15px; }
+input:focus { outline: 2px solid #d7a6b7; border-color: #9b526f; }
+.submit-button { width: 100%; margin-top: 22px; padding: 13px; border: 0; border-radius: 25px; background: #9b526f; color: white; font-size: 15px; cursor: pointer; }
+.submit-button:hover { background: #49313d; }
+.message { min-height: 20px; color: #9b526f; font-size: 13px; line-height: 1.5; }
+.switch-link, .back-link { text-align: center; font-size: 14px; }
+a { color: #9b526f; }
+.back-link { display: block; margin-top: 18px; text-decoration: none; }
